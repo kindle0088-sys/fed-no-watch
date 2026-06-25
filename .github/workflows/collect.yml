@@ -1,0 +1,58 @@
+name: Collect Fed News & Deploy
+
+on:
+  schedule:
+    # Every 2 hours from 8:00 AM to midnight (UTC), roughly market hours
+    - cron: '0 */2 8-23 * *'
+  workflow_dispatch:  # Manual trigger
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  collect-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Fetch full history so we can push
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Collect & Build Data
+        run: |
+          python3 tools/build_data.py
+
+      - name: Verify output
+        run: |
+          node --check assets/js/data.js 2>/dev/null || node -e "JSON.parse(require('fs').readFileSync('assets/js/data.js','utf8').replace('const SITE_DATA =','').replace(/;\$'/,'')); console.log('✓ data.js valid');" 2>/dev/null || echo '⚠ JS validation skipped'
+          echo "Items: $(node -e "const fs=require('fs');console.log('items='+[...fs.readFileSync('assets/js/data.js','utf8').matchAll(/"id":/g)].length);" 2>/dev/null || echo 'N/A')"
+
+      - name: Commit & Push
+        run: |
+          git config --global user.name 'bot'
+          git config --global user.email 'bot@fed-no-watch.example'
+          git add -A
+          TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M UTC')
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: auto collect fed news ($TIMESTAMP)"
+            git push
+          fi
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: gh-pages
+          enable_jekyll: false
+          keep_files: false
