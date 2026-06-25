@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fed No Watch — 官员发言</title>
+<meta name="description" content="美联储官员发言时间线，按人物筛选。">
+<link rel="stylesheet" href="assets/css/style.css?v=1">
+<style>
+/* Speech page additional styles */
+.speaker-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.speaker-btn {
+  background: var(--bg-input);
+  border: 1px solid var(--border-card);
+  color: var(--text-secondary);
+  padding: 0.45rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.speaker-btn:hover,
+.speaker-btn.active {
+  background: var(--accent-gold-dim);
+  color: var(--accent-gold);
+  border-color: var(--accent-gold);
+}
+
+.speaker-btn .count {
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  margin-left: 0.3rem;
+}
+
+.speaker-btn.active .count { color: var(--accent-gold); }
+
+.speech-stats {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.82rem;
+}
+
+.speech-stats .stat {
+  color: var(--text-secondary);
+}
+
+.speech-stats .stat em {
+  color: var(--accent-gold);
+  font-style: normal;
+  font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="site-title">Fed No Watch <span>· 联储观察</span></a>
+    <nav>
+      <a href="index.html">📊 时间线</a>
+      <a href="speech.html" class="active">🎤 官员发言</a>
+      <a href="rate.html">📈 利率工具</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="hero">
+    <h1>🎤 美联储官员发言</h1>
+    <p>来自 Federal Reserve 官方的演讲、证词、欢迎致辞等</p>
+  </div>
+
+  <!-- Stats -->
+  <div class="speech-stats" id="speech-stats">
+    <span class="loading" style="display:flex;gap:0.5rem;padding:0;background:transparent;">
+      <div class="spinner" style="width:14px;height:14px;margin:0;"></div>
+      <span>加载发言数据...</span>
+    </span>
+  </div>
+
+  <!-- Speaker filter -->
+  <div class="speaker-grid" id="speaker-grid"></div>
+
+  <!-- Timeline -->
+  <div id="speech-container">
+    <div class="loading" id="speech-loading">
+      <div class="spinner"></div>
+      <p>加载发言数据...</p>
+    </div>
+    <div class="empty-state" id="speech-empty" style="display:none;">
+      <h3>🍃 暂无数据</h3>
+      <p>尚未采集到官员发言数据。</p>
+    </div>
+    <div class="timeline" id="speech-timeline"></div>
+  </div>
+
+</div>
+
+<div class="live-bar">
+  <div class="live-bar-inner">
+    <span class="live-indicator">
+      <span class="live-dot pulse" id="liveDot"></span>
+      <span>⚡ 自动采集</span>
+    </span>
+    <span class="live-time" id="liveTime"></span>
+  </div>
+</div>
+
+<button class="scroll-top" id="scrollTop" title="回到顶部">↑</button>
+
+<footer>
+  <p>Fed No Watch · 数据来源：<a href="https://www.federalreserve.gov/newsevents.htm" target="_blank">Federal Reserve</a> &amp; <a href="https://wallstreetcn.com" target="_blank">华尔街见闻</a></p>
+  <p>由 GitHub Actions 每小时自动采集 · 仅供个人参考，不构成投资建议</p>
+</footer>
+
+<script src="assets/js/data.js?v=1"></script>
+<script src="assets/js/app.js?v=1"></script>
+<script>
+(function() {
+  'use strict';
+
+  const SPEAKER_KEYWORDS = {
+    'Powell': ['Powell', '鲍威尔'],
+    'Waller': ['Waller', '沃勒'],
+    'Bowman': ['Bowman', '鲍曼'],
+    'Cook': ['Cook', '库克'],
+    'Barr': ['Barr', '巴尔'],
+    'Jefferson': ['Jefferson', '杰斐逊'],
+    'Collins': ['Collins', '柯林斯'],
+    'Williams': ['Williams', '威廉姆斯'],
+    'Bostic': ['Bostic', '博斯蒂克'],
+    'Daly': ['Daly', '戴利'],
+    'Goolsbee': ['Goolsbee', '古尔斯比'],
+    'Harker': ['Harker', '哈克'],
+    'Kashkari': ['Kashkari', '卡什卡利'],
+    'Logan': ['Logan', '洛根'],
+    'Mester': ['Mester', '梅斯特'],
+    'Schmid': ['Schmid', '施密德'],
+  };
+
+  let selectedSpeaker = null;
+
+  function init() {
+    const data = typeof SITE_DATA !== 'undefined' ? SITE_DATA : null;
+    if (!data || !data.items) {
+      document.getElementById('speech-loading').style.display = 'none';
+      document.getElementById('speech-empty').style.display = 'block';
+      return;
+    }
+
+    // Get all official speech items
+    const speeches = data.items.filter(item => item.source === 'federal_reserve' &&
+      (item.category === 'speech' || item.category === 'fomc'));
+
+    // Also include wallstreetcn items that mention a speaker
+    const mediaSpeeches = data.items.filter(item => item.source === 'wallstreetcn' &&
+      item.category === 'media_speech');
+
+    const allSpeeches = [...speeches, ...mediaSpeeches];
+
+    // Stats
+    const totalSpeeches = speeches.length;
+    const uniqueSpeakers = new Set(speeches.map(s => s.speaker).filter(Boolean));
+    document.getElementById('speech-stats').innerHTML =
+      `<span class="stat">📝 共 <em>${totalSpeeches}</em> 条官方发言</span>` +
+      `<span class="stat">🎤 涉及 <em>${uniqueSpeakers.size}</em> 位官员</span>`;
+
+    // Build speaker grid
+    const speakerCounts = {};
+    speeches.forEach(s => {
+      if (s.speaker) {
+        // Normalize speaker name
+        let name = s.speaker;
+        for (const [full, aliases] of Object.entries(SPEAKER_KEYWORDS)) {
+          if (aliases.some(a => name.includes(a))) {
+            name = full;
+            break;
+          }
+        }
+        speakerCounts[name] = (speakerCounts[name] || 0) + 1;
+      }
+    });
+
+    const grid = document.getElementById('speaker-grid');
+    let html = '<button class="speaker-btn active" data-speaker="all">全部</button>';
+    Object.entries(speakerCounts)
+      .sort((a, b) => b[1] - a[1])
+      .forEach(([speaker, count]) => {
+        html += `<button class="speaker-btn" data-speaker="${speaker}">${speaker} <span class="count">${count}</span></button>`;
+      });
+    grid.innerHTML = html;
+
+    // Click handlers
+    grid.querySelectorAll('.speaker-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        grid.querySelectorAll('.speaker-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        selectedSpeaker = btn.dataset.speaker === 'all' ? null : btn.dataset.speaker;
+        renderSpeeches(speeches);
+      });
+    });
+
+    // Render timeline
+    renderSpeeches(speeches);
+    
+    if (typeof SITE_DATA !== 'undefined' && SITE_DATA?.updated_at) {
+      const el = document.getElementById('liveTime');
+      if (el) {
+        const d = new Date(SITE_DATA.updated_at);
+        el.textContent = '更新于 ' + d.toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' }) + ' (北京时间)';
+      }
+    }
+  }
+
+  function renderSpeeches(speeches) {
+    const timeline = document.getElementById('speech-timeline');
+    const loading = document.getElementById('speech-loading');
+    const empty = document.getElementById('speech-empty');
+
+    loading.style.display = 'none';
+    empty.style.display = 'none';
+
+    let filtered = speeches;
+    if (selectedSpeaker) {
+      filtered = speeches.filter(s => {
+        const speaker = s.speaker || '';
+        const keywords = SPEAKER_KEYWORDS[selectedSpeaker] || [selectedSpeaker];
+        return keywords.some(k => speaker.includes(k));
+      });
+    }
+
+    if (filtered.length === 0) {
+      timeline.innerHTML = '';
+      empty.style.display = 'block';
+      empty.innerHTML = '<h3>🍃 无匹配结果</h3><p>该官员暂无发言记录。</p>';
+      return;
+    }
+
+    // Group by date
+    const groups = {};
+    filtered.forEach(s => {
+      const d = s.published_at ? formatDateShort(s.published_at) : '未知日期';
+      if (!groups[d]) groups[d] = [];
+      groups[d].push(s);
+    });
+
+    let html = '';
+    Object.keys(groups).forEach(date => {
+      html += `<div class="date-separator">${date}</div>`;
+      groups[date].forEach(s => {
+        const timeStr = s.published_at ? formatTime(s.published_at) : '';
+        const speakerTag = s.speaker ? `<span class="extra-tag speaker">🎤 ${escapeHtml(s.speaker)}</span>` : '';
+        html += `
+          <div class="news-card">
+            <div class="meta">
+              <span class="source-tag fed">🏛 Federal Reserve</span>
+              <span class="cat-tag">演讲</span>
+              <span class="time">${timeStr}</span>
+            </div>
+            <div class="title">
+              <a href="${escapeAttr(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.title)}</a>
+            </div>
+            ${s.summary ? `<div class="summary">${escapeHtml(s.summary)}</div>` : ''}
+            ${speakerTag ? `<div class="extra">${speakerTag}</div>` : ''}
+          </div>
+        `;
+      });
+    });
+
+    timeline.innerHTML = html;
+  }
+
+  function formatDateShort(isoStr) {
+    try { const d = new Date(isoStr); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; }
+    catch { return isoStr || ''; }
+  }
+
+  function formatTime(isoStr) {
+    try { const d = new Date(isoStr); return `${String(d.getMonth()+1).padStart(2,'0')}/${String(d.getDate()).padStart(2,'0')} ${String(d.getHours()).padStart(2,'0')}:${String(d.getMinutes()).padStart(2,'0')}`; }
+    catch { return isoStr || ''; }
+  }
+
+  function escapeHtml(str) { if (!str) return ''; return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function escapeAttr(str) { if (!str) return '#'; return String(str).replace(/"/g,'&quot;'); }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+</body>
+</html>
