@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fed No Watch — 美联储新闻时间线</title>
+<meta name="description" content="每日收集美联储官方新闻、官员发言、华尔街见闻等相关内容，按时间线展示。">
+<link rel="stylesheet" href="assets/css/style.css?v=1">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="site-title">Fed No Watch <span>· 联储观察</span></a>
+    <nav>
+      <a href="index.html" class="active">📊 时间线</a>
+      <a href="speech.html">🎤 官员发言</a>
+      <a href="rate.html">📈 利率工具</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="hero">
+    <h1>🏛 美联储新闻时间线</h1>
+    <p>来自 Federal Reserve 官方 + 华尔街见闻 的联储相关动态</p>
+  </div>
+
+  <!-- Rate bar -->
+  <div class="rate-bar" id="rate-bar-content">
+    <div class="loading" style="display:flex;gap:0.5rem;align-items:center;padding:0;background:transparent;">
+      <div class="spinner" style="width:16px;height:16px;margin:0;"></div>
+      <span style="font-size:0.8rem;">加载利率数据...</span>
+    </div>
+  </div>
+
+  <!-- Filter bar -->
+  <div class="filter-bar">
+    <span class="filter-label">🔍</span>
+    <input type="text" id="search-input" placeholder="搜索标题、内容、发言官员...">
+    <span class="filter-label">来源</span>
+    <select id="source-filter" class="filter-btn">
+      <option value="all">全部</option>
+      <option value="federal_reserve">Federal Reserve</option>
+      <option value="wallstreetcn">华尔街见闻</option>
+    </select>
+    <span class="filter-label">类别</span>
+    <select id="category-filter" class="filter-btn">
+      <option value="all">全部</option>
+      <option value="speech">演讲</option>
+      <option value="press_release">新闻稿</option>
+      <option value="fomc">FOMC</option>
+      <option value="media_opinion">新闻/分析</option>
+      <option value="media_rate">利率分析</option>
+      <option value="media_fomc">FOMC报道</option>
+      <option value="media_speech">媒体报道</option>
+    </select>
+  </div>
+
+  <!-- Timeline -->
+  <div id="timeline-container">
+    <div class="loading" id="loading-el">
+      <div class="spinner"></div>
+      <p>加载新闻数据...</p>
+    </div>
+    <div class="empty-state" id="empty-state" style="display:none;">
+      <h3>🍃 暂无数据</h3>
+      <p>数据文件未加载。请确保 data.js 已正确生成。</p>
+    </div>
+    <div class="timeline" id="timeline-el"></div>
+  </div>
+
+</div>
+
+<!-- Live bar -->
+<div class="live-bar">
+  <div class="live-bar-inner">
+    <span class="live-indicator">
+      <span class="live-dot pulse" id="liveDot"></span>
+      <span>⚡ 自动采集</span>
+    </span>
+    <span class="live-time" id="liveTime"></span>
+  </div>
+</div>
+
+<!-- Scroll to top -->
+<button class="scroll-top" id="scrollTop" title="回到顶部">↑</button>
+
+<footer>
+  <p>Fed No Watch · 数据来源：<a href="https://www.federalreserve.gov/newsevents.htm" target="_blank">Federal Reserve</a> &amp; <a href="https://wallstreetcn.com" target="_blank">华尔街见闻</a></p>
+  <p>由 GitHub Actions 每小时自动采集 · 仅供个人参考，不构成投资建议</p>
+</footer>
+
+<script src="assets/js/data.js?v=1"></script>
+<script src="assets/js/app.js?v=1"></script>
+</body>
+</html>
