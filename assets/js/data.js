@@ -1,21 +1,366 @@
 const SITE_DATA = {
-  "updated_at": "2026-06-25T10:55:49Z",
+  "updated_at": "2026-07-08T09:15:43Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
     {
-      "id": "wscn-3775444?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "id": "fed-press_all-bcreg20260707a.htm",
+      "source": "federal_reserve",
+      "source_label": "Federal Reserve Press Release",
+      "category": "press_release",
+      "title": "Federal Reserve Board requests comment on a proposal to amend its requirements for banks to maintain anti-money laundering programs",
+      "summary": "Federal Reserve Board requests comment on a proposal to amend its requirements for banks to maintain anti-money laundering programs",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260707a.htm",
+      "published_at": "2026-07-07T19:00:00+00:00",
+      "language": "en",
+      "speaker": null,
+      "keywords": [
+        "federal reserve"
+      ]
+    },
+    {
+      "id": "fed-speeches-bowman20260707a.htm",
+      "source": "federal_reserve",
+      "source_label": "Fed Speech",
+      "category": "speech",
+      "title": "Bowman, Opening Remarks on Sound Practices for Artificial Intelligence",
+      "summary": "Speech At the Financial Stability Board Virtual Outreach Event",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260707a.htm",
+      "published_at": "2026-07-07T11:00:00+00:00",
+      "language": "en",
+      "speaker": "Bowman",
+      "keywords": [
+        "federal reserve"
+      ]
+    },
+    {
+      "id": "wscn-3776320?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
       "category": "media_opinion",
-      "title": "32家银行全部通过<em>美联储</em>年度压力测试，为派息和回购铺平道路",
+      "title": "和沃什唱反调？<em>美联储</em>理事沃勒：前瞻指引“有价值”，但要灵活",
       "summary": "",
-      "url": "https://wallstreetcn.com/articles/3775444?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-06-24T22:09:50+00:00",
+      "url": "https://wallstreetcn.com/articles/3776320?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-06T18:48:37+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
         "美联储"
+      ]
+    },
+    {
+      "id": "fed-speeches-waller20260706a.htm",
+      "source": "federal_reserve",
+      "source_label": "Fed Speech",
+      "category": "speech",
+      "title": "Waller, Two Thoughts on the Transmission of Monetary Policy",
+      "summary": "Speech At &quot;Challenges for Monetary Policy Transmission in a Changing World,&quot; a conference sponsored by the Bank of Italy for the research network initiated by the European System of Central Banks, Rome, Italy",
+      "url": "https://www.federalreserve.gov/newsevents/speech/waller20260706a.htm",
+      "published_at": "2026-07-06T15:00:00+00:00",
+      "language": "en",
+      "speaker": "Waller",
+      "keywords": [
+        "federal reserve"
+      ]
+    },
+    {
+      "id": "wscn-3776309?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_rate",
+      "title": "非农数据“弱的恰到好处”，<em>美联储</em>加息预期过度了？【程坦说 第3讲】",
+      "summary": "",
+      "url": "https://wallstreetcn.com/premium/articles/3776309?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-06T13:01:10+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
+    {
+      "id": "wscn-3776237?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_rate",
+      "title": "近距离观察沃什后，大摩首席经济学家坚称：<em>美联储</em>今年不会加息",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3776237?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-06T00:50:26+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
+    {
+      "id": "wscn-3776243?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_rate",
+      "title": "Citadel策略主管：市场低估了<em>美联储</em>7月加息的可能性",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3776243?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-06T00:39:31+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
+    {
+      "id": "wscn-3776189?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_opinion",
+      "title": "黄金如今又看<em>美联储</em>的脸色了",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3776189?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-04T02:06:56+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
+    {
+      "id": "wscn-3776173?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_rate",
+      "title": "摩根大通警告：若<em>美联储</em>提前加息，金价可能再次跌破4000甚至测试3500-3600",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3776173?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-03T16:25:09+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
+    {
+      "id": "wscn-3776126?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_rate",
+      "title": "非农“哑火”，花旗：加息理由已“不复存在”，预计<em>美联储</em>10月重启降息",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3776126?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-03T02:52:11+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
+    {
+      "id": "wscn-3776111?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_opinion",
+      "title": "“掌控”<em>美联储</em>，特朗普一直没放弃",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3776111?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-03T00:34:40+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
+    {
+      "id": "wscn-3776099?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_opinion",
+      "title": "特朗普：我知道沃什想做什么，但他须做分内之事，<em>美联储</em>理事会可能有点“敌对”",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3776099?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-02T23:56:55+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
+    {
+      "id": "wscn-3776096?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_opinion",
+      "title": "非农“哑火”，华尔街料沃什可再等，“新<em>美联储</em>通讯社”：报告对联储判断几无影响，就业没通胀重要",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3776096?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-02T18:52:22+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
+    {
+      "id": "fed-press_all-enforcement20260702a.htm",
+      "source": "federal_reserve",
+      "source_label": "Federal Reserve Press Release",
+      "category": "press_release",
+      "title": "Federal Reserve Board issues enforcement action with Small Business Bank and announces termination enforcement actions with BNP Paribas S.A., BNP Paribas USA, Inc., BNP Paribas Securities Corp., and Community Bankshares, Inc.",
+      "summary": "Federal Reserve Board issues enforcement action with Small Business Bank and announces termination enforcement actions with BNP Paribas S.A., BNP Paribas USA, Inc., BNP Paribas Securities Corp., and Community Bankshares, Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260702a.htm",
+      "published_at": "2026-07-02T15:00:00+00:00",
+      "language": "en",
+      "speaker": null,
+      "keywords": [
+        "federal reserve"
+      ]
+    },
+    {
+      "id": "wscn-3776046?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_rate",
+      "title": "“新<em>美联储</em>通讯社”：沃什称通胀风险下降，但拒绝透露7月是否<em>加息</em>",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3776046?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
+      "published_at": "2026-07-02T05:56:01+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储 加息"
+      ]
+    },
+    {
+      "id": "wscn-3775974?keyword=%E7%89%B9%E6%9C%97%E6%99%AE+%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_rate",
+      "title": "哈塞特：部分<em>美联储</em>官员投票或“针对<em>特朗</em><em>普</em>”，沃什不希望加息但面临意见分裂",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3775974?keyword=%E7%89%B9%E6%9C%97%E6%99%AE+%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-01T21:31:14+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "特朗普 美联储"
+      ]
+    },
+    {
+      "id": "fed-press_all-other20260701a.htm",
+      "source": "federal_reserve",
+      "source_label": "Federal Reserve Press Release",
+      "category": "press_release",
+      "title": "Federal Reserve issues initial findings from its 2025 triennial payments study",
+      "summary": "Federal Reserve issues initial findings from its 2025 triennial payments study",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260701a.htm",
+      "published_at": "2026-07-01T18:30:00+00:00",
+      "language": "en",
+      "speaker": null,
+      "keywords": [
+        "federal reserve"
+      ]
+    },
+    {
+      "id": "wscn-3775896?keyword=%E8%81%94%E9%82%A6%E5%9F%BA%E9%87%91%E5%88%A9%E7%8E%87",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_rate",
+      "title": "交易员加码押注美联储7月加息！<em>联邦基金利率</em>期货空头头寸激增",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3775896?keyword=%E8%81%94%E9%82%A6%E5%9F%BA%E9%87%91%E5%88%A9%E7%8E%87",
+      "published_at": "2026-06-30T23:12:58+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "联邦基金利率"
+      ]
+    },
+    {
+      "id": "fed-press_all-bcreg20260630a.htm",
+      "source": "federal_reserve",
+      "source_label": "Federal Reserve Press Release",
+      "category": "press_release",
+      "title": "Agencies release list of distressed or underserved nonmetropolitan middle-income geographies",
+      "summary": "Agencies release list of distressed or underserved nonmetropolitan middle-income geographies",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260630a.htm",
+      "published_at": "2026-06-30T14:00:00+00:00",
+      "language": "en",
+      "speaker": null,
+      "keywords": [
+        "federal reserve"
+      ]
+    },
+    {
+      "id": "wscn-3775782?layout=wscn-layout?keyword=%E7%89%B9%E6%9C%97%E6%99%AE+%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_opinion",
+      "title": "6月30日会员早报：美最高法院“放权”<em>特朗</em><em>普</em>只保护<em>美联储</em> 美伊停火一周即生变",
+      "summary": "",
+      "url": "https://wallstreetcn.com/premium/articles/3775782?layout=wscn-layout?keyword=%E7%89%B9%E6%9C%97%E6%99%AE+%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-06-29T21:02:54+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "特朗普 美联储"
+      ]
+    },
+    {
+      "id": "wscn-3775647?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_rate",
+      "title": "由鸽转鹰，<em>美联储</em>卡什卡利：通胀高企，预计今年<em>加息</em>一次",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3775647?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
+      "published_at": "2026-06-26T17:19:58+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储 加息"
+      ]
+    },
+    {
+      "id": "wscn-3775550?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_rate",
+      "title": "同一份PCE <em>美联储</em>看了想<em>加息</em>、市场赌它不敢",
+      "summary": "",
+      "url": "https://wallstreetcn.com/premium/articles/3775550?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
+      "published_at": "2026-06-25T22:03:07+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储 加息"
+      ]
+    },
+    {
+      "id": "fed-press_all-enforcement20260625a.htm",
+      "source": "federal_reserve",
+      "source_label": "Federal Reserve Press Release",
+      "category": "press_release",
+      "title": "Federal Reserve Board announces termination of enforcement action with Jiko Group, Inc.",
+      "summary": "Federal Reserve Board announces termination of enforcement action with Jiko Group, Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260625a.htm",
+      "published_at": "2026-06-25T15:00:00+00:00",
+      "language": "en",
+      "speaker": null,
+      "keywords": [
+        "federal reserve"
+      ]
+    },
+    {
+      "id": "fed-press_all-enforcement20260625b.htm",
+      "source": "federal_reserve",
+      "source_label": "Federal Reserve Press Release",
+      "category": "press_release",
+      "title": "Federal Reserve Board issues enforcement action with employee of Bank of Eufaula and S N B Bancshares, Inc.",
+      "summary": "Federal Reserve Board issues enforcement action with employee of Bank of Eufaula and S N B Bancshares, Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260625b.htm",
+      "published_at": "2026-06-25T15:00:00+00:00",
+      "language": "en",
+      "speaker": null,
+      "keywords": [
+        "federal reserve"
       ]
     },
     {
@@ -49,36 +394,6 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3775421?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_opinion",
-      "title": "科技股方向或由此决定！野村：美光财报正取代<em>美联储</em>成为短期市场最大变量",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3775421?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-06-24T12:26:24+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
-      ]
-    },
-    {
-      "id": "wscn-3775326?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_opinion",
-      "title": "华尔街集体下调金价预期，鹰派<em>美联储</em>重塑黄金定价逻辑",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3775326?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-06-23T18:17:08+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
-      ]
-    },
-    {
       "id": "wscn-3775318?layout=wscn-layout?keyword=FOMC",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
@@ -91,36 +406,6 @@ const SITE_DATA = {
       "speaker": null,
       "keywords": [
         "FOMC"
-      ]
-    },
-    {
-      "id": "wscn-3775241?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_rate",
-      "title": "美银“大幅转鹰”：预期<em>美联储</em>年内加息3次，此前是0次！",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3775241?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-06-23T00:39:42+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
-      ]
-    },
-    {
-      "id": "wscn-3775226?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_rate",
-      "title": "多家大行上调<em>美联储</em>加息预期，RBC：美股可承受未来12个月内两次适度加息",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3775226?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-06-22T20:36:10+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
       ]
     },
     {
@@ -154,78 +439,18 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3775054?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_opinion",
-      "title": "债市和<em>美联储</em>预期分化了？市场不怕通胀了！",
-      "summary": "",
-      "url": "https://wallstreetcn.com/premium/articles/3775054?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-06-22T12:35:38+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
-      ]
-    },
-    {
-      "id": "wscn-3775196?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "id": "wscn-3775196?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E9%99%8D%E6%81%AF",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
       "category": "media_rate",
-      "title": "<em>美联储</em>转鹰、华尔街纷纷投降，花旗成“最后的倔强”：坚持10月重启降息",
+      "title": "<em>美联储</em>转鹰、华尔街纷纷投降，花旗成“最后的倔强”：坚持10月重启<em>降息</em>",
       "summary": "",
-      "url": "https://wallstreetcn.com/articles/3775196?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "url": "https://wallstreetcn.com/articles/3775196?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E9%99%8D%E6%81%AF",
       "published_at": "2026-06-22T08:56:46+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
-        "美联储"
-      ]
-    },
-    {
-      "id": "wscn-3775158?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_opinion",
-      "title": "油价、<em>美联储</em>、ETF资金——这三股力量将决定黄金的命运",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3775158?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-06-22T02:50:49+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
-      ]
-    },
-    {
-      "id": "wscn-3775136?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_opinion",
-      "title": "Citadel Securities：“猛药”治通胀，更“主动”的<em>美联储</em>反而更好应对",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3775136?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-06-21T12:01:20+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
-      ]
-    },
-    {
-      "id": "wscn-3775120?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_opinion",
-      "title": "沃什的野望：五“刀”重构<em>美联储</em>",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3775120?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-06-21T02:08:28+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
+        "美联储 降息"
       ]
     },
     {
@@ -274,21 +499,6 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3775037?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_rate",
-      "title": "华尔街老将Yardeni：若坚持2%通胀目标，<em>美联储</em>可能继续<em>加息</em>",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3775037?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
-      "published_at": "2026-06-18T12:57:46+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储 加息"
-      ]
-    },
-    {
       "id": "wscn-3775030?layout=wscn-layout?keyword=%E8%81%94%E5%82%A8%E5%88%A9%E7%8E%87",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
@@ -301,51 +511,6 @@ const SITE_DATA = {
       "speaker": null,
       "keywords": [
         "联储利率"
-      ]
-    },
-    {
-      "id": "wscn-3774999?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_rate",
-      "title": "全球央行吹响抗通胀“集结号”：欧日齐步<em>加息</em>，<em>美联储</em>秋季紧缩风险骤升",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3774999?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
-      "published_at": "2026-06-18T08:08:42+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储 加息"
-      ]
-    },
-    {
-      "id": "wscn-3774988?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_rate",
-      "title": "释放鹰派<em>加息</em>信号的是<em>美联储</em>，而非沃什",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3774988?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
-      "published_at": "2026-06-18T05:42:17+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储 加息"
-      ]
-    },
-    {
-      "id": "wscn-3774984?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_rate",
-      "title": "高盛Kaplan：<em>美联储</em>或在秋季“连环<em>加息</em>”",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3774984?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
-      "published_at": "2026-06-18T05:16:54+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储 加息"
       ]
     },
     {
@@ -391,36 +556,6 @@ const SITE_DATA = {
       "speaker": null,
       "keywords": [
         "联储利率"
-      ]
-    },
-    {
-      "id": "wscn-3774938?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_rate",
-      "title": "<em>美联储</em>继续按兵不动但暗示鹰派倾向，强调通胀承诺，半数决策者料年内<em>加息</em>",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3774938?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
-      "published_at": "2026-06-17T20:59:25+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储 加息"
-      ]
-    },
-    {
-      "id": "wscn-3774944?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_rate",
-      "title": "<em>美联储</em>半数官员想<em>加息</em>！交易员全面定价10月前将<em>加息</em>，预计明年一季度前<em>加息</em>两次",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3774944?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
-      "published_at": "2026-06-17T20:32:23+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储 加息"
       ]
     },
     {
@@ -889,21 +1024,6 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "fed-press_all-enforcement20260521a.htm",
-      "source": "federal_reserve",
-      "source_label": "Federal Reserve Press Release",
-      "category": "press_release",
-      "title": "Federal Reserve Board issues enforcement action with former employee of Commerce Bank",
-      "summary": "Federal Reserve Board issues enforcement action with former employee of Commerce Bank",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260521a.htm",
-      "published_at": "2026-05-21T15:00:00+00:00",
-      "language": "en",
-      "speaker": null,
-      "keywords": [
-        "federal reserve"
-      ]
-    },
-    {
       "id": "wscn-3772814?keyword=FOMC",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
@@ -919,40 +1039,10 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3772805?keyword=%E7%89%B9%E6%9C%97%E6%99%AE+%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_opinion",
-      "title": "沃什会向<em>特朗</em><em>普</em>妥协吗？一文盘点总统与<em>美联储</em>70年权力暗战",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3772805?keyword=%E7%89%B9%E6%9C%97%E6%99%AE+%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-05-21T07:39:26+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "特朗普 美联储"
-      ]
-    },
-    {
-      "id": "fed-press_all-other20260520a.htm",
+      "id": "fed-press_monetary-monetary20260520a.htm",
       "source": "federal_reserve",
-      "source_label": "Federal Reserve Press Release",
-      "category": "press_release",
-      "title": "Federal Reserve Board requests public comment on a proposal to establish a \"payment account,\" which legally eligible financial institutions could use for the specific purpose of clearing and settling their payments",
-      "summary": "Federal Reserve Board requests public comment on a proposal to establish a &quot;payment account,&quot; which legally eligible financial institutions could use for the specific purpose of clearing and settling their payments",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260520a.htm",
-      "published_at": "2026-05-20T20:00:00+00:00",
-      "language": "en",
-      "speaker": null,
-      "keywords": [
-        "federal reserve"
-      ]
-    },
-    {
-      "id": "fed-press_all-monetary20260520a.htm",
-      "source": "federal_reserve",
-      "source_label": "Federal Reserve Press Release",
-      "category": "press_release",
+      "source_label": "FOMC",
+      "category": "fomc",
       "title": "Minutes of the Federal Open Market Committee, April 28-29, 2026",
       "summary": "Minutes of the Federal Open Market Committee, April 28-29, 2026",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260520a.htm",
@@ -1009,21 +1099,6 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3772465?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E9%99%8D%E6%81%AF",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_rate",
-      "title": "新债王：<em>美联储</em>今年<em>降息</em>“已不可能”",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3772465?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E9%99%8D%E6%81%AF",
-      "published_at": "2026-05-18T00:01:15+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储 降息"
-      ]
-    },
-    {
       "id": "wscn-3772404?keyword=%E9%B2%8D%E5%A8%81%E5%B0%94",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
@@ -1036,51 +1111,6 @@ const SITE_DATA = {
       "speaker": null,
       "keywords": [
         "鲍威尔"
-      ]
-    },
-    {
-      "id": "fed-press_all-other20260515a.htm",
-      "source": "federal_reserve",
-      "source_label": "Federal Reserve Press Release",
-      "category": "press_release",
-      "title": "Federal Reserve Board names Jerome H. Powell as chair pro tempore; Powell will serve as chair pro tempore until Kevin M. Warsh is sworn in as the new chair",
-      "summary": "Federal Reserve Board names Jerome H. Powell as chair pro tempore; Powell will serve as chair pro tempore until Kevin M. Warsh is sworn in as the new chair",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260515a.htm",
-      "published_at": "2026-05-15T21:00:00+00:00",
-      "language": "en",
-      "speaker": null,
-      "keywords": [
-        "federal reserve"
-      ]
-    },
-    {
-      "id": "fed-press_all-orders20260515a.htm",
-      "source": "federal_reserve",
-      "source_label": "Federal Reserve Press Release",
-      "category": "press_release",
-      "title": "Federal Reserve Board announces approval of application by the Stephen M. Calk 2025 Trust",
-      "summary": "Federal Reserve Board announces approval of application by the Stephen M. Calk 2025 Trust",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260515a.htm",
-      "published_at": "2026-05-15T20:30:00+00:00",
-      "language": "en",
-      "speaker": null,
-      "keywords": [
-        "federal reserve"
-      ]
-    },
-    {
-      "id": "fed-press_all-orders20260515b.htm",
-      "source": "federal_reserve",
-      "source_label": "Federal Reserve Press Release",
-      "category": "press_release",
-      "title": "Federal Reserve Board announces it does not object to the conversion of United Texas Bank, of Dallas, Texas, from a bank supervised by the Federal Reserve to a national bank supervised by the Office of the Comptroller of the Currency",
-      "summary": "Federal Reserve Board announces it does not object to the conversion of United Texas Bank, of Dallas, Texas, from a bank supervised by the Federal Reserve to a national bank supervised by the Office of the Comptroller of the Currency",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260515b.htm",
-      "published_at": "2026-05-15T20:30:00+00:00",
-      "language": "en",
-      "speaker": null,
-      "keywords": [
-        "federal reserve"
       ]
     },
     {
@@ -1144,21 +1174,6 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3772056?keyword=%E7%89%B9%E6%9C%97%E6%99%AE+%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_rate",
-      "title": "<em>美联储</em>新掌门的两难：降息通胀狂飙，不降则面临<em>特朗</em><em>普</em>起诉",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3772056?keyword=%E7%89%B9%E6%9C%97%E6%99%AE+%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-05-12T07:06:56+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "特朗普 美联储"
-      ]
-    },
-    {
       "id": "fed-speeches-bowman20260508a.htm",
       "source": "federal_reserve",
       "source_label": "Fed Speech",
@@ -1204,21 +1219,6 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "fed-speeches-cook20260508a.htm",
-      "source": "federal_reserve",
-      "source_label": "Fed Speech",
-      "category": "speech",
-      "title": "Cook, Perspectives on Tokenization and Implications for the Financial System",
-      "summary": "Speech At the Central Bank of West African States (BCEAO) Conference on Digital Assets, Dakar, Senegal",
-      "url": "https://www.federalreserve.gov/newsevents/speech/cook20260508a.htm",
-      "published_at": "2026-05-08T09:45:00+00:00",
-      "language": "en",
-      "speaker": "Cook",
-      "keywords": [
-        "federal reserve"
-      ]
-    },
-    {
       "id": "wscn-3771404?layout=wscn-layout?keyword=%E9%B2%8D%E5%A8%81%E5%B0%94",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
@@ -1231,21 +1231,6 @@ const SITE_DATA = {
       "speaker": null,
       "keywords": [
         "鲍威尔"
-      ]
-    },
-    {
-      "id": "fed-speeches-bowman20260505a.htm",
-      "source": "federal_reserve",
-      "source_label": "Fed Speech",
-      "category": "speech",
-      "title": "Bowman, A Coordinated Approach to Consumer Fraud Protection",
-      "summary": "Speech At the 2026 Women in Housing and Finance Symposium, Washington, D.C.",
-      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260505a.htm",
-      "published_at": "2026-05-05T14:00:00+00:00",
-      "language": "en",
-      "speaker": "Bowman",
-      "keywords": [
-        "federal reserve"
       ]
     },
     {
@@ -1743,8 +1728,8 @@ const SITE_DATA = {
     }
   ],
   "stats": {
-    "total_items": 113,
-    "fed_official": 46,
-    "wallstreetcn": 67
+    "total_items": 112,
+    "fed_official": 47,
+    "wallstreetcn": 65
   }
 };
