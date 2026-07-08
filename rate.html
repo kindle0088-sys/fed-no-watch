@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fed No Watch — 利率工具</title>
+<meta name="description" content="联邦基金利率、FOMC日历、市场加息概率。">
+<link rel="stylesheet" href="assets/css/style.css?v=1">
+<style>
+.rate-page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.rate-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+}
+
+.rate-card h3 {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.rate-card .big-number {
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.rate-card .big-number.gold { color: var(--accent-gold); }
+.rate-card .big-number.blue { color: var(--accent-blue); }
+.rate-card .big-number.green { color: var(--accent-green); }
+.rate-card .big-number.red { color: var(--accent-red); }
+
+.rate-card .sub {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.rate-card .range-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.rate-card .range-bar .bar {
+  flex: 1;
+  height: 6px;
+  background: var(--bg-input);
+  border-radius: 3px;
+  position: relative;
+}
+
+.rate-card .range-bar .bar .fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-green), var(--accent-gold));
+  border-radius: 3px;
+  width: 50%;
+}
+
+.prob-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.prob-table th {
+  text-align: left;
+  color: var(--text-muted);
+  font-weight: 400;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.prob-table td {
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.prob-table .prob-bar {
+  width: 120px;
+  height: 6px;
+  background: var(--bg-input);
+  border-radius: 3px;
+  display: inline-block;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.prob-table .prob-bar .fill {
+  height: 100%;
+  border-radius: 3px;
+  background: var(--accent-gold);
+}
+
+.fomc-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.fomc-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 0.85rem;
+}
+
+.fomc-item .fomc-date {
+  color: var(--text-primary);
+  font-weight: 500;
+  min-width: 80px;
+}
+
+.fomc-item .fomc-label {
+  color: var(--text-secondary);
+}
+
+.fomc-item .fomc-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+}
+
+.fomc-item .fomc-dot.next {
+  background: var(--accent-green);
+  box-shadow: 0 0 8px rgba(96,192,128,0.5);
+}
+
+.fomc-item .fomc-dot.past {
+  background: var(--text-muted);
+}
+
+.disclaimer {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  padding: 1rem;
+  text-align: center;
+  line-height: 1.6;
+  border-top: 1px solid var(--border-light);
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .rate-page-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="site-title">Fed No Watch <span>· 联储观察</span></a>
+    <nav>
+      <a href="index.html">📊 时间线</a>
+      <a href="speech.html">🎤 官员发言</a>
+      <a href="rate.html" class="active">📈 利率工具</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="hero">
+    <h1>📈 利率工具</h1>
+    <p>联邦基金利率、FOMC议程、市场加息概率</p>
+  </div>
+
+  <!-- Grid: Current Rate + FOMC -->
+  <div class="rate-page-grid">
+    <div class="rate-card">
+      <h3>🏛 联邦基金目标利率</h3>
+      <div class="big-number gold" id="target-rate">加载中...</div>
+      <div class="range-bar" id="range-bar">
+        <span id="range-low" style="color:var(--text-muted);font-size:0.82rem;"></span>
+        <div class="bar"><div class="fill" id="range-fill"></div></div>
+        <span id="range-high" style="color:var(--text-muted);font-size:0.82rem;"></span>
+      </div>
+      <div class="sub" id="target-date"></div>
+    </div>
+
+    <div class="rate-card">
+      <h3>📊 有效联邦基金利率 (EFFR)</h3>
+      <div class="big-number blue" id="effr-rate">加载中...</div>
+      <div class="sub" id="effr-date"></div>
+      <div class="sub" style="margin-top:0.5rem;">来源：FRED (Federal Reserve Bank of New York)</div>
+    </div>
+  </div>
+
+  <!-- CME Probabilities -->
+  <div class="rate-card" style="margin-bottom:1rem;">
+    <h3>🎯 市场加息概率 (CME FedWatch)</h3>
+    <table class="prob-table">
+      <thead>
+        <tr>
+          <th>结果</th>
+          <th>概率</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="prob-body">
+        <tr><td colspan="3" style="text-align:center;color:var(--text-muted);">加载中...</td></tr>
+      </tbody>
+    </table>
+    <div class="sub" style="margin-top:0.5rem;" id="prob-note"></div>
+  </div>
+
+  <!-- FOMC calendar -->
+  <div class="rate-card">
+    <h3>📅 FOMC 会议日程</h3>
+    <div class="fomc-timeline" id="fomc-timeline">
+      <div class="loading" style="display:flex;gap:0.5rem;padding:0.5rem 0;background:transparent;">
+        <div class="spinner" style="width:14px;height:14px;margin:0;"></div>
+        <span style="color:var(--text-muted);font-size:0.85rem;">加载FOMC日程...</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    ⚠ 利率数据基于 Federal Reserve 官方声明和 FRED 数据。CME 概率数据来源于 CME FedWatch 公开页面，仅供参考。<br>
+    本网站不构成投资建议。市场预期可能快速变化。
+  </div>
+
+</div>
+
+<div class="live-bar">
+  <div class="live-bar-inner">
+    <span class="live-indicator">
+      <span class="live-dot pulse" id="liveDot"></span>
+      <span>⚡ 自动采集</span>
+    </span>
+    <span class="live-time" id="liveTime"></span>
+  </div>
+</div>
+
+<button class="scroll-top" id="scrollTop" title="回到顶部">↑</button>
+
+<footer>
+  <p>Fed No Watch · 数据来源：<a href="https://www.federalreserve.gov/newsevents.htm" target="_blank">Federal Reserve</a> &amp; <a href="https://wallstreetcn.com" target="_blank">华尔街见闻</a></p>
+  <p>由 GitHub Actions 每小时自动采集 · 仅供个人参考，不构成投资建议</p>
+</footer>
+
+<script src="assets/js/data.js?v=1"></script>
+<script>
+(function() {
+  'use strict';
+
+  function init() {
+    const data = typeof SITE_DATA !== 'undefined' ? SITE_DATA : null;
+    if (!data || !data.fed_rate) return;
+
+    const r = data.fed_rate;
+
+    // Target rate
+    document.getElementById('target-rate').textContent =
+      `${r.target_lower?.toFixed(2)}% – ${r.target_upper?.toFixed(2)}%`;
+    document.getElementById('range-low').textContent = r.target_lower?.toFixed(2) + '%';
+    document.getElementById('range-high').textContent = r.target_upper?.toFixed(2) + '%';
+    document.getElementById('target-date').textContent =
+      `最近更新：${r.rate_date || '—'} · 来源：FOMC声明`;
+
+    // EFFR
+    document.getElementById('effr-rate').textContent = r.effective_rate?.toFixed(2) + '%';
+    document.getElementById('effr-date').textContent =
+      `数据截至：${r.rate_date || '—'} · 来源：FRED`;
+
+    // Range fill (visual)
+    if (r.target_lower && r.target_upper) {
+      const spread = r.target_upper - r.target_lower;
+      const fromCenter = r.effective_rate - r.target_lower;
+      const pct = spread > 0 ? (fromCenter / spread * 100) : 50;
+      document.getElementById('range-fill').style.width = Math.min(100, Math.max(0, pct)) + '%';
+    }
+
+    // CME probabilities
+    const cm = r.cme_probabilities || {};
+    const probBody = document.getElementById('prob-body');
+    if (cm.hold || cm.hike_25bp) {
+      const total = (cm.hold || 0) + (cm.hike_25bp || 0) + (cm.cut_25 || 0);
+      probBody.innerHTML = '';
+      const items = [
+        { label: '维持不变 (Hold)', prob: cm.hold, color: 'var(--accent-gold)' },
+        { label: '加息25bp (Hike)', prob: cm.hike_25bp, color: 'var(--accent-red)' },
+        { label: '降息25bp (Cut)', prob: cm.cut_25 || 0, color: 'var(--accent-green)' },
+      ];
+      items.forEach(item => {
+        if (!item.prob && item.prob !== 0) return;
+        const pct = total > 0 ? (item.prob / total * 100) : 0;
+        probBody.innerHTML += `
+          <tr>
+            <td>${item.label}</td>
+            <td><div class="prob-bar"><div class="fill" style="width:${pct}%;background:${item.color}"></div></div></td>
+            <td><strong>${item.prob.toFixed(1)}%</strong></td>
+          </tr>
+        `;
+      });
+      const note = document.getElementById('prob-note');
+      if (cm.note) note.textContent = '📌 ' + cm.note;
+    } else {
+      probBody.innerHTML = '<tr><td colspan="3" style="text-align:center;color:var(--text-muted);">暂无CME概率数据</td></tr>';
+    }
+
+    // FOMC dates
+    const fomcEl = document.getElementById('fomc-timeline');
+    if (r.fomc_dates && r.fomc_dates.length) {
+      const now = new Date();
+      let html = '';
+      r.fomc_dates.forEach(d => {
+        const dObj = new Date(d.date + 'T12:00:00Z');
+        const isPast = dObj < now;
+        const isNext = !isPast && (!r.fomc_dates.find(prev => {
+          const p = new Date(prev.date + 'T12:00:00Z');
+          return p < dObj && p >= now;
+        }));
+        const dotClass = isPast ? 'past' : (isNext ? 'next' : '');
+        const label = isNext ? ' ⬅ 下次会议' : '';
+        html += `
+          <div class="fomc-item">
+            <span class="fomc-dot ${dotClass}"></span>
+            <span class="fomc-date">${dObj.toLocaleDateString('zh-CN', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
+            <span class="fomc-label">${d.label}${label}</span>
+          </div>
+        `;
+      });
+      fomcEl.innerHTML = html;
+    }
+
+    // Live time
+    if (data.updated_at) {
+      const el = document.getElementById('liveTime');
+      if (el) {
+        const d = new Date(data.updated_at);
+        el.textContent = '更新于 ' + d.toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' }) + ' (北京时间)';
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>
+</body>
+</html>
