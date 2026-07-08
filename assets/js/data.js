@@ -1,8 +1,38 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-08T16:16:27Z",
+  "updated_at": "2026-07-08T21:48:51Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "wscn-3776500?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_rate",
+      "title": "<em>美联储</em>会议纪要：通胀担忧加剧，少数官员支持6月加息，AI跻身三大通胀风险",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3776500?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-08T21:05:53+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
+    {
+      "id": "fed-press_all-monetary20260708a.htm",
+      "source": "federal_reserve",
+      "source_label": "Federal Reserve Press Release",
+      "category": "press_release",
+      "title": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
+      "summary": "Minutes of the Federal Open Market Committee, June 16-17, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260708a.htm",
+      "published_at": "2026-07-08T18:00:00+00:00",
+      "language": "en",
+      "speaker": null,
+      "keywords": [
+        "federal reserve"
+      ]
+    },
     {
       "id": "fed-press_all-bcreg20260707a.htm",
       "source": "federal_reserve",
@@ -184,21 +214,6 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3776096?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_opinion",
-      "title": "非农“哑火”，华尔街料沃什可再等，“新<em>美联储</em>通讯社”：报告对联储判断几无影响，就业没通胀重要",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3776096?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-07-02T18:52:22+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
-      ]
-    },
-    {
       "id": "fed-press_all-enforcement20260702a.htm",
       "source": "federal_reserve",
       "source_label": "Federal Reserve Press Release",
@@ -319,18 +334,18 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3775550?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_rate",
-      "title": "同一份PCE <em>美联储</em>看了想<em>加息</em>、市场赌它不敢",
-      "summary": "",
-      "url": "https://wallstreetcn.com/premium/articles/3775550?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
-      "published_at": "2026-06-25T22:03:07+00:00",
-      "language": "zh",
+      "id": "fed-press_all-enforcement20260625b.htm",
+      "source": "federal_reserve",
+      "source_label": "Federal Reserve Press Release",
+      "category": "press_release",
+      "title": "Federal Reserve Board issues enforcement action with employee of Bank of Eufaula and S N B Bancshares, Inc.",
+      "summary": "Federal Reserve Board issues enforcement action with employee of Bank of Eufaula and S N B Bancshares, Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260625b.htm",
+      "published_at": "2026-06-25T15:00:00+00:00",
+      "language": "en",
       "speaker": null,
       "keywords": [
-        "美联储 加息"
+        "federal reserve"
       ]
     },
     {
@@ -341,21 +356,6 @@ const SITE_DATA = {
       "title": "Federal Reserve Board announces termination of enforcement action with Jiko Group, Inc.",
       "summary": "Federal Reserve Board announces termination of enforcement action with Jiko Group, Inc.",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260625a.htm",
-      "published_at": "2026-06-25T15:00:00+00:00",
-      "language": "en",
-      "speaker": null,
-      "keywords": [
-        "federal reserve"
-      ]
-    },
-    {
-      "id": "fed-press_all-enforcement20260625b.htm",
-      "source": "federal_reserve",
-      "source_label": "Federal Reserve Press Release",
-      "category": "press_release",
-      "title": "Federal Reserve Board issues enforcement action with employee of Bank of Eufaula and S N B Bancshares, Inc.",
-      "summary": "Federal Reserve Board issues enforcement action with employee of Bank of Eufaula and S N B Bancshares, Inc.",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260625b.htm",
       "published_at": "2026-06-25T15:00:00+00:00",
       "language": "en",
       "speaker": null,
@@ -949,21 +949,6 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "fed-press_all-bcreg20260522a.htm",
-      "source": "federal_reserve",
-      "source_label": "Federal Reserve Press Release",
-      "category": "press_release",
-      "title": "Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations",
-      "summary": "Agencies publish resolution plan feedback letters for certain domestic and foreign banking organizations",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260522a.htm",
-      "published_at": "2026-05-22T20:00:00+00:00",
-      "language": "en",
-      "speaker": null,
-      "keywords": [
-        "federal reserve"
-      ]
-    },
-    {
       "id": "wscn-3772950?keyword=%E7%89%B9%E6%9C%97%E6%99%AE+%E7%BE%8E%E8%81%94%E5%82%A8",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
@@ -1534,21 +1519,6 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "fed-press_monetary-monetary20251230a.htm",
-      "source": "federal_reserve",
-      "source_label": "FOMC",
-      "category": "fomc",
-      "title": "Minutes of the Federal Open Market Committee, December 9–10, 2025",
-      "summary": "Minutes of the Federal Open Market Committee, December 9–10, 2025",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20251230a.htm",
-      "published_at": "2025-12-30T19:00:00+00:00",
-      "language": "en",
-      "speaker": null,
-      "keywords": [
-        "federal reserve"
-      ]
-    },
-    {
       "id": "wscn-3761066?keyword=%E8%81%94%E5%82%A8%E5%88%A9%E7%8E%87",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
@@ -1728,8 +1698,8 @@ const SITE_DATA = {
     }
   ],
   "stats": {
-    "total_items": 112,
-    "fed_official": 47,
-    "wallstreetcn": 65
+    "total_items": 110,
+    "fed_official": 46,
+    "wallstreetcn": 64
   }
 };
