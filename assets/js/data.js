@@ -1,8 +1,38 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-09T17:52:02Z",
+  "updated_at": "2026-07-09T19:39:02Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "wscn-3776606?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_opinion",
+      "title": "<em>美联储</em>宣布外部工作组目标及成员",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3776606?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-09T19:06:16+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
+    {
+      "id": "fed-press_all-monetary20260709a.htm",
+      "source": "federal_reserve",
+      "source_label": "Federal Reserve Press Release",
+      "category": "press_release",
+      "title": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
+      "summary": "Federal Reserve announces the leadership and objectives of its task forces to advance the conduct of monetary policy",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260709a.htm",
+      "published_at": "2026-07-09T19:00:00+00:00",
+      "language": "en",
+      "speaker": null,
+      "keywords": [
+        "federal reserve"
+      ]
+    },
     {
       "id": "wscn-3776604?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "source": "wallstreetcn",
@@ -214,18 +244,18 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3776173?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "id": "wscn-3776173?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
       "category": "media_rate",
-      "title": "摩根大通警告：若<em>美联储</em>提前加息，金价可能再次跌破4000甚至测试3500-3600",
+      "title": "摩根大通警告：若<em>美联储</em>提前<em>加息</em>，金价可能再次跌破4000甚至测试3500-3600",
       "summary": "",
-      "url": "https://wallstreetcn.com/articles/3776173?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "url": "https://wallstreetcn.com/articles/3776173?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
       "published_at": "2026-07-03T16:25:09+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
-        "美联储"
+        "美联储 加息"
       ]
     },
     {
@@ -919,10 +949,10 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "fed-press_all-monetary20260526a.htm",
+      "id": "fed-press_monetary-monetary20260526a.htm",
       "source": "federal_reserve",
-      "source_label": "Federal Reserve Press Release",
-      "category": "press_release",
+      "source_label": "FOMC",
+      "category": "fomc",
       "title": "Minutes of the Board's discount rate meeting on April 20 and 29, 2026",
       "summary": "Minutes of the Board&#39;s discount rate meeting on April 20 and 29, 2026",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260526a.htm",
@@ -1534,21 +1564,6 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "fed-press_monetary-monetary20260106a.htm",
-      "source": "federal_reserve",
-      "source_label": "FOMC",
-      "category": "fomc",
-      "title": "Minutes of the Board's discount rate meeting on December 10, 2025",
-      "summary": "Minutes of the Board&#39;s discount rate meeting on December 10, 2025",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260106a.htm",
-      "published_at": "2026-01-06T19:00:00+00:00",
-      "language": "en",
-      "speaker": null,
-      "keywords": [
-        "federal reserve"
-      ]
-    },
-    {
       "id": "wscn-3761066?keyword=%E8%81%94%E5%82%A8%E5%88%A9%E7%8E%87",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
@@ -1728,8 +1743,8 @@ const SITE_DATA = {
     }
   ],
   "stats": {
-    "total_items": 112,
+    "total_items": 113,
     "fed_official": 46,
-    "wallstreetcn": 66
+    "wallstreetcn": 67
   }
 };
