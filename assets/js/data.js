@@ -1,5 +1,5 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-10T17:44:31Z",
+  "updated_at": "2026-07-10T19:21:57Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
@@ -8,10 +8,10 @@ const SITE_DATA = {
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
       "category": "media_opinion",
-      "title": "<em>美联储</em>货币政策报告：致力实现价格稳定，截尾PCE下降，劳动生产率增长强劲",
+      "title": "<em>美联储</em>半年度报告：通胀今春进一步升温，AI基建成推高通胀新因素，重申稳定价格承诺",
       "summary": "",
       "url": "https://wallstreetcn.com/articles/3776678?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-07-10T15:01:03+00:00",
+      "published_at": "2026-07-10T17:18:34+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
