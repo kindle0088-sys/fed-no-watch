@@ -1,8 +1,23 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-10T14:13:35Z",
+  "updated_at": "2026-07-10T17:44:31Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "wscn-3776678?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_opinion",
+      "title": "<em>美联储</em>货币政策报告：致力实现价格稳定，截尾PCE下降，劳动生产率增长强劲",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3776678?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-10T15:01:03+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
     {
       "id": "wscn-3776610?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "source": "wallstreetcn",
@@ -229,18 +244,18 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3776309?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "id": "wscn-3776309?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
       "category": "media_rate",
-      "title": "非农数据“弱的恰到好处”，<em>美联储</em>加息预期过度了？【程坦说 第3讲】",
+      "title": "非农数据“弱的恰到好处”，<em>美联储</em><em>加息</em>预期过度了？【程坦说 第3讲】",
       "summary": "",
-      "url": "https://wallstreetcn.com/premium/articles/3776309?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "url": "https://wallstreetcn.com/premium/articles/3776309?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
       "published_at": "2026-07-06T13:01:10+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
-        "美联储"
+        "美联储 加息"
       ]
     },
     {
@@ -1758,8 +1773,8 @@ const SITE_DATA = {
     }
   ],
   "stats": {
-    "total_items": 114,
+    "total_items": 115,
     "fed_official": 46,
-    "wallstreetcn": 68
+    "wallstreetcn": 69
   }
 };
