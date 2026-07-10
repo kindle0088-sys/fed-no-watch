@@ -1,8 +1,23 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-09T23:08:04Z",
+  "updated_at": "2026-07-10T02:37:30Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "wscn-3776610?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_rate",
+      "title": "沃什正在改造<em>美联储</em>的“大脑” 这比降不降息重要一百倍",
+      "summary": "",
+      "url": "https://wallstreetcn.com/premium/articles/3776610?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-09T23:55:34+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
     {
       "id": "wscn-3776608?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "source": "wallstreetcn",
@@ -229,18 +244,18 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3776237?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "id": "wscn-3776237?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
       "category": "media_rate",
-      "title": "近距离观察沃什后，大摩首席经济学家坚称：<em>美联储</em>今年不会加息",
+      "title": "近距离观察沃什后，大摩首席经济学家坚称：<em>美联储</em>今年不会<em>加息</em>",
       "summary": "",
-      "url": "https://wallstreetcn.com/articles/3776237?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "url": "https://wallstreetcn.com/articles/3776237?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
       "published_at": "2026-07-06T00:50:26+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
-        "美联储"
+        "美联储 加息"
       ]
     },
     {
@@ -1137,21 +1152,6 @@ const SITE_DATA = {
       "summary": "",
       "url": "https://wallstreetcn.com/articles/3772584?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E9%99%8D%E6%81%AF",
       "published_at": "2026-05-19T01:26:13+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储 降息"
-      ]
-    },
-    {
-      "id": "wscn-3772579?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E9%99%8D%E6%81%AF",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_rate",
-      "title": "中金：<em>美联储</em>年内或难以<em>降息</em>",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3772579?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E9%99%8D%E6%81%AF",
-      "published_at": "2026-05-19T00:06:50+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
