@@ -1,8 +1,23 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-11T22:42:55Z",
+  "updated_at": "2026-07-12T02:23:55Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "wscn-3776712?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_opinion",
+      "title": "财报季、沃什和美国通胀--<em>美联储</em>和市场将走向何方？下周“初见端倪”！",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3776712?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-12T01:36:15+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
     {
       "id": "wscn-3776706?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "source": "wallstreetcn",
@@ -169,18 +184,18 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3776500?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "id": "wscn-3776500?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
       "category": "media_rate",
-      "title": "<em>美联储</em>会议纪要：通胀担忧加剧，少数官员支持6月加息，AI跻身三大通胀风险",
+      "title": "<em>美联储</em>会议纪要：通胀担忧加剧，少数官员支持6月<em>加息</em>，AI跻身三大通胀风险",
       "summary": "",
-      "url": "https://wallstreetcn.com/articles/3776500?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "url": "https://wallstreetcn.com/articles/3776500?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
       "published_at": "2026-07-08T21:05:53+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
-        "美联储"
+        "美联储 加息"
       ]
     },
     {
@@ -1773,8 +1788,8 @@ const SITE_DATA = {
     }
   ],
   "stats": {
-    "total_items": 115,
+    "total_items": 116,
     "fed_official": 46,
-    "wallstreetcn": 69
+    "wallstreetcn": 70
   }
 };
