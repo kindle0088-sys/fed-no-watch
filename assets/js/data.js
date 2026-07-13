@@ -1,8 +1,38 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-13T14:25:07Z",
+  "updated_at": "2026-07-13T17:52:05Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "wscn-3776831?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_rate",
+      "title": "<em>美联储</em>理事沃勒：可能需要通过加息来抑制核心通胀",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3776831?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-13T16:53:13+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
+    {
+      "id": "fed-speeches-waller20260713a.htm",
+      "source": "federal_reserve",
+      "source_label": "Fed Speech",
+      "category": "speech",
+      "title": "Waller, Monetary Policy at a Crossroads",
+      "summary": "Speech At the New York Association for Business Economics, New York, New York",
+      "url": "https://www.federalreserve.gov/newsevents/speech/waller20260713a.htm",
+      "published_at": "2026-07-13T16:30:00+00:00",
+      "language": "en",
+      "speaker": "Waller",
+      "keywords": [
+        "federal reserve"
+      ]
+    },
     {
       "id": "fed-speeches-bowman20260713a.htm",
       "source": "federal_reserve",
@@ -166,21 +196,6 @@ const SITE_DATA = {
       "speaker": null,
       "keywords": [
         "federal reserve"
-      ]
-    },
-    {
-      "id": "wscn-3776604?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_opinion",
-      "title": "<em>美联储</em>青睐的通胀指标将迎修订！分析师：或为沃什按兵不动提供空间",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3776604?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-07-09T16:18:59+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
       ]
     },
     {
@@ -1291,21 +1306,6 @@ const SITE_DATA = {
       "speaker": null,
       "keywords": [
         "鲍威尔"
-      ]
-    },
-    {
-      "id": "fed-speeches-waller20260508a.htm",
-      "source": "federal_reserve",
-      "source_label": "Fed Speech",
-      "category": "speech",
-      "title": "Waller, Update On Federal Reserve Bank Operations",
-      "summary": "Speech At the Hoover Institution Annual Monetary Policy Conference, Stanford, California",
-      "url": "https://www.federalreserve.gov/newsevents/speech/waller20260508a.htm",
-      "published_at": "2026-05-08T23:30:00+00:00",
-      "language": "en",
-      "speaker": "Waller",
-      "keywords": [
-        "federal reserve"
       ]
     },
     {
