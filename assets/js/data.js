@@ -1,8 +1,38 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-13T06:49:57Z",
+  "updated_at": "2026-07-13T10:56:23Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "fed-speeches-bowman20260713a.htm",
+      "source": "federal_reserve",
+      "source_label": "Fed Speech",
+      "category": "speech",
+      "title": "Bowman, Modernizing Financial Regulation",
+      "summary": "Speech At a Bank Policy Institute London Conference, London, United Kingdom",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260713a.htm",
+      "published_at": "2026-07-13T09:25:00+00:00",
+      "language": "en",
+      "speaker": "Bowman",
+      "keywords": [
+        "federal reserve"
+      ]
+    },
+    {
+      "id": "wscn-3776610?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_rate",
+      "title": "沃什正在改造<em>美联储</em>的“大脑” 这比降不降息重要一百倍",
+      "summary": "",
+      "url": "https://wallstreetcn.com/premium/articles/3776610?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-13T07:16:21+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
     {
       "id": "wscn-3776775?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "source": "wallstreetcn",
@@ -27,21 +57,6 @@ const SITE_DATA = {
       "summary": "",
       "url": "https://wallstreetcn.com/premium/articles/3776717?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "published_at": "2026-07-13T05:22:00+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
-      ]
-    },
-    {
-      "id": "wscn-3776610?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_rate",
-      "title": "沃什正在改造<em>美联储</em>的“大脑” 这比降不降息重要一百倍",
-      "summary": "",
-      "url": "https://wallstreetcn.com/premium/articles/3776610?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-07-12T10:10:51+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
@@ -1276,21 +1291,6 @@ const SITE_DATA = {
       "speaker": null,
       "keywords": [
         "鲍威尔"
-      ]
-    },
-    {
-      "id": "fed-speeches-bowman20260508a.htm",
-      "source": "federal_reserve",
-      "source_label": "Fed Speech",
-      "category": "speech",
-      "title": "Bowman, When Regulation Reshapes Markets: The Migration of Corporate Lending",
-      "summary": "Speech At the Hoover Institution Annual Monetary Policy Conference, Stanford, California",
-      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260508a.htm",
-      "published_at": "2026-05-08T23:30:00+00:00",
-      "language": "en",
-      "speaker": "Bowman",
-      "keywords": [
-        "federal reserve"
       ]
     },
     {
