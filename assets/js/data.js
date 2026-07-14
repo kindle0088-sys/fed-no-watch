@@ -1,14 +1,29 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-14T15:21:15Z",
+  "updated_at": "2026-07-14T17:10:38Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "fed-speeches-barr20260714a.htm",
+      "source": "federal_reserve",
+      "source_label": "Fed Speech",
+      "category": "speech",
+      "title": "Barr, Will Artificial Intelligence Broadly Raise Living Standards or Drive Income and Wealth Inequality?",
+      "summary": "Speech At “Next-Gen Financial Inclusion,” the third annual Financial Inclusion Conference hosted by the Federal Reserve Board",
+      "url": "https://www.federalreserve.gov/newsevents/speech/barr20260714a.htm",
+      "published_at": "2026-07-14T16:40:00+00:00",
+      "language": "en",
+      "speaker": "Barr",
+      "keywords": [
+        "federal reserve"
+      ]
+    },
     {
       "id": "wscn-3776932?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
       "category": "media_opinion",
-      "title": "沃什：2020年<em>美联储</em>框架是个错误，希望通胀升幅更受限",
+      "title": "沃什货币政策听证首秀：即使特朗普批评也会按数据行动，<em>美联储</em>有工具实现价格稳定",
       "summary": "",
       "url": "https://wallstreetcn.com/articles/3776932?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "published_at": "2026-07-14T14:28:32+00:00",
@@ -1144,18 +1159,18 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3772936?keyword=%E7%89%B9%E6%9C%97%E6%99%AE+%E7%BE%8E%E8%81%94%E5%82%A8",
+      "id": "wscn-3772936?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E9%99%8D%E6%81%AF",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
       "category": "media_rate",
-      "title": "“新<em>美联储</em>通讯社”：<em>特朗</em><em>普</em>选沃什本为降息，但市场已开始押注加息",
+      "title": "“新<em>美联储</em>通讯社”：特朗普选沃什本为<em>降息</em>，但市场已开始押注加息",
       "summary": "",
-      "url": "https://wallstreetcn.com/articles/3772936?keyword=%E7%89%B9%E6%9C%97%E6%99%AE+%E7%BE%8E%E8%81%94%E5%82%A8",
+      "url": "https://wallstreetcn.com/articles/3772936?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E9%99%8D%E6%81%AF",
       "published_at": "2026-05-22T11:46:08+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
-        "特朗普 美联储"
+        "美联储 降息"
       ]
     },
     {
@@ -1244,21 +1259,6 @@ const SITE_DATA = {
       "published_at": "2026-05-14T23:00:00+00:00",
       "language": "en",
       "speaker": "Barr",
-      "keywords": [
-        "federal reserve"
-      ]
-    },
-    {
-      "id": "fed-speeches-bowman20260514a.htm",
-      "source": "federal_reserve",
-      "source_label": "Fed Speech",
-      "category": "speech",
-      "title": "Bowman, Opening Remarks",
-      "summary": "Speech At the Federal Reserve Bank of Kansas City 2026 Future of Banking Conference: Powering Progress, Protecting Trust, Kansas City, Missouri (via pre-recorded video)",
-      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260514a.htm",
-      "published_at": "2026-05-14T17:00:00+00:00",
-      "language": "en",
-      "speaker": "Bowman",
       "keywords": [
         "federal reserve"
       ]
