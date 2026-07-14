@@ -1,8 +1,38 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-14T17:10:38Z",
+  "updated_at": "2026-07-14T19:13:37Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "fed-speeches-bowman20260714a.htm",
+      "source": "federal_reserve",
+      "source_label": "Fed Speech",
+      "category": "speech",
+      "title": "Bowman, Responsible Innovation and Financial Inclusion",
+      "summary": "Speech At “Next-Gen Financial Inclusion,” the third annual Financial Inclusion Conference hosted by the Federal Reserve Board, Washington, D.C. (via pre-recorded video)",
+      "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260714a.htm",
+      "published_at": "2026-07-14T18:55:00+00:00",
+      "language": "en",
+      "speaker": "Bowman",
+      "keywords": [
+        "federal reserve"
+      ]
+    },
+    {
+      "id": "fed-press_all-monetary20260714a.htm",
+      "source": "federal_reserve",
+      "source_label": "Federal Reserve Press Release",
+      "category": "press_release",
+      "title": "Minutes of the Board's discount rate meetings on June 8 and June 17, 2026",
+      "summary": "Minutes of the Board&#39;s discount rate meetings on June 8 and June 17, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260714a.htm",
+      "published_at": "2026-07-14T18:00:00+00:00",
+      "language": "en",
+      "speaker": null,
+      "keywords": [
+        "federal reserve"
+      ]
+    },
     {
       "id": "fed-speeches-barr20260714a.htm",
       "source": "federal_reserve",
@@ -16,21 +46,6 @@ const SITE_DATA = {
       "speaker": "Barr",
       "keywords": [
         "federal reserve"
-      ]
-    },
-    {
-      "id": "wscn-3776932?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_opinion",
-      "title": "沃什货币政策听证首秀：即使特朗普批评也会按数据行动，<em>美联储</em>有工具实现价格稳定",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3776932?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-07-14T14:28:32+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
       ]
     },
     {
@@ -192,6 +207,21 @@ const SITE_DATA = {
       "summary": "",
       "url": "https://wallstreetcn.com/articles/3776712?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "published_at": "2026-07-12T01:36:15+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
+    {
+      "id": "wscn-3776706?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_opinion",
+      "title": "全球市场步入“动荡之夏”：警惕<em>美联储</em>变局、日元危机和财报季大考",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3776706?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-11T12:11:58+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
@@ -514,13 +544,13 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "fed-press_all-enforcement20260625a.htm",
+      "id": "fed-press_all-enforcement20260625b.htm",
       "source": "federal_reserve",
       "source_label": "Federal Reserve Press Release",
       "category": "press_release",
-      "title": "Federal Reserve Board announces termination of enforcement action with Jiko Group, Inc.",
-      "summary": "Federal Reserve Board announces termination of enforcement action with Jiko Group, Inc.",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260625a.htm",
+      "title": "Federal Reserve Board issues enforcement action with employee of Bank of Eufaula and S N B Bancshares, Inc.",
+      "summary": "Federal Reserve Board issues enforcement action with employee of Bank of Eufaula and S N B Bancshares, Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260625b.htm",
       "published_at": "2026-06-25T15:00:00+00:00",
       "language": "en",
       "speaker": null,
@@ -529,13 +559,13 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "fed-press_all-enforcement20260625b.htm",
+      "id": "fed-press_all-enforcement20260625a.htm",
       "source": "federal_reserve",
       "source_label": "Federal Reserve Press Release",
       "category": "press_release",
-      "title": "Federal Reserve Board issues enforcement action with employee of Bank of Eufaula and S N B Bancshares, Inc.",
-      "summary": "Federal Reserve Board issues enforcement action with employee of Bank of Eufaula and S N B Bancshares, Inc.",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260625b.htm",
+      "title": "Federal Reserve Board announces termination of enforcement action with Jiko Group, Inc.",
+      "summary": "Federal Reserve Board announces termination of enforcement action with Jiko Group, Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260625a.htm",
       "published_at": "2026-06-25T15:00:00+00:00",
       "language": "en",
       "speaker": null,
@@ -1009,21 +1039,6 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "fed-press_all-enforcement20260528a.htm",
-      "source": "federal_reserve",
-      "source_label": "Federal Reserve Press Release",
-      "category": "press_release",
-      "title": "Federal Reserve Board issues enforcement actions with former employee of Atlantic Union Bank and former employee of Frost Bank",
-      "summary": "Federal Reserve Board issues enforcement actions with former employee of Atlantic Union Bank and former employee of Frost Bank",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260528a.htm",
-      "published_at": "2026-05-28T15:00:00+00:00",
-      "language": "en",
-      "speaker": null,
-      "keywords": [
-        "federal reserve"
-      ]
-    },
-    {
       "id": "fed-speeches-jefferson20260527a.htm",
       "source": "federal_reserve",
       "source_label": "Fed Speech",
@@ -1159,18 +1174,18 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3772936?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E9%99%8D%E6%81%AF",
+      "id": "wscn-3772936?keyword=%E7%89%B9%E6%9C%97%E6%99%AE+%E7%BE%8E%E8%81%94%E5%82%A8",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
       "category": "media_rate",
-      "title": "“新<em>美联储</em>通讯社”：特朗普选沃什本为<em>降息</em>，但市场已开始押注加息",
+      "title": "“新<em>美联储</em>通讯社”：<em>特朗</em><em>普</em>选沃什本为降息，但市场已开始押注加息",
       "summary": "",
-      "url": "https://wallstreetcn.com/articles/3772936?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E9%99%8D%E6%81%AF",
+      "url": "https://wallstreetcn.com/articles/3772936?keyword=%E7%89%B9%E6%9C%97%E6%99%AE+%E7%BE%8E%E8%81%94%E5%82%A8",
       "published_at": "2026-05-22T11:46:08+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
-        "美联储 降息"
+        "特朗普 美联储"
       ]
     },
     {
@@ -1246,21 +1261,6 @@ const SITE_DATA = {
       "speaker": null,
       "keywords": [
         "鲍威尔"
-      ]
-    },
-    {
-      "id": "fed-speeches-barr20260514a.htm",
-      "source": "federal_reserve",
-      "source_label": "Fed Speech",
-      "category": "speech",
-      "title": "Barr, Efficient and Effective Central Banking: Beyond the Balance Sheet",
-      "summary": "Speech At the Money Marketeers of New York University, New York, New York",
-      "url": "https://www.federalreserve.gov/newsevents/speech/barr20260514a.htm",
-      "published_at": "2026-05-14T23:00:00+00:00",
-      "language": "en",
-      "speaker": "Barr",
-      "keywords": [
-        "federal reserve"
       ]
     },
     {
@@ -1579,21 +1579,6 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "fed-press_monetary-monetary20260128b.htm",
-      "source": "federal_reserve",
-      "source_label": "FOMC",
-      "category": "fomc",
-      "title": "Federal Open Market Committee reaffirms its \"Statement on Longer-Run Goals and Monetary Policy Strategy\"",
-      "summary": "Federal Open Market Committee reaffirms its &quot;Statement on Longer-Run Goals and Monetary Policy Strategy&quot;",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260128b.htm",
-      "published_at": "2026-01-28T19:00:00+00:00",
-      "language": "en",
-      "speaker": null,
-      "keywords": [
-        "federal reserve"
-      ]
-    },
-    {
       "id": "wscn-3764278?keyword=%E8%81%94%E5%82%A8%E5%88%A9%E7%8E%87",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
@@ -1788,8 +1773,8 @@ const SITE_DATA = {
     }
   ],
   "stats": {
-    "total_items": 116,
-    "fed_official": 46,
+    "total_items": 115,
+    "fed_official": 45,
     "wallstreetcn": 70
   }
 };
