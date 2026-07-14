@@ -1,8 +1,23 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-14T13:25:13Z",
+  "updated_at": "2026-07-14T15:21:15Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "wscn-3776932?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_opinion",
+      "title": "沃什：2020年<em>美联储</em>框架是个错误，希望通胀升幅更受限",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3776932?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-14T14:28:32+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
     {
       "id": "wscn-3776925?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "source": "wallstreetcn",
@@ -162,21 +177,6 @@ const SITE_DATA = {
       "summary": "",
       "url": "https://wallstreetcn.com/articles/3776712?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "published_at": "2026-07-12T01:36:15+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
-      ]
-    },
-    {
-      "id": "wscn-3776706?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_opinion",
-      "title": "全球市场步入“动荡之夏”：警惕<em>美联储</em>变局、日元危机和财报季大考",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3776706?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-07-11T12:11:58+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
