@@ -1,8 +1,38 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-15T11:38:35Z",
+  "updated_at": "2026-07-15T13:28:00Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "wscn-3777033?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_opinion",
+      "title": "<em>美联储</em>“三把手”：利率处于有利位置，有理由相信通胀已达峰值",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3777033?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-15T12:54:22+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
+    {
+      "id": "wscn-3777027?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_rate",
+      "title": "哈塞特：数据未构成加息理由，沃什会带领<em>美联储</em>就利率作出正确决定",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3777027?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-15T11:39:49+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
     {
       "id": "wscn-3776947?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "source": "wallstreetcn",
@@ -199,36 +229,6 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3776717?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_opinion",
-      "title": "油价崩了，CPI降了：美国6月CPI会改变<em>美联储</em>路径吗？",
-      "summary": "",
-      "url": "https://wallstreetcn.com/premium/articles/3776717?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-07-13T05:22:00+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
-      ]
-    },
-    {
-      "id": "wscn-3776712?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_opinion",
-      "title": "财报季、沃什和美国通胀--<em>美联储</em>和市场将走向何方？下周“初见端倪”！",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3776712?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-07-12T01:36:15+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
-      ]
-    },
-    {
       "id": "fed-press_all-monetary20260709a.htm",
       "source": "federal_reserve",
       "source_label": "Federal Reserve Press Release",
@@ -409,18 +409,18 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3776126?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
+      "id": "wscn-3776126?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E9%99%8D%E6%81%AF",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
       "category": "media_rate",
-      "title": "非农“哑火”，花旗：<em>加息</em>理由已“不复存在”，预计<em>美联储</em>10月重启降息",
+      "title": "非农“哑火”，花旗：加息理由已“不复存在”，预计<em>美联储</em>10月重启<em>降息</em>",
       "summary": "",
-      "url": "https://wallstreetcn.com/articles/3776126?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
+      "url": "https://wallstreetcn.com/articles/3776126?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E9%99%8D%E6%81%AF",
       "published_at": "2026-07-03T02:52:11+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
-        "美联储 加息"
+        "美联储 降息"
       ]
     },
     {
@@ -1639,21 +1639,6 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3755757?keyword=%E8%81%94%E5%82%A8%E5%88%A9%E7%8E%87",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_fomc",
-      "title": "今夜，史上最“分裂”的一次美<em>联储</em><em>利率</em>决议来了！",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3755757?keyword=%E8%81%94%E5%82%A8%E5%88%A9%E7%8E%87",
-      "published_at": "2025-09-17T08:45:00+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "联储利率"
-      ]
-    },
-    {
       "id": "wscn-3745429?keyword=%E8%81%94%E9%82%A6%E5%9F%BA%E9%87%91%E5%88%A9%E7%8E%87",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
@@ -1773,8 +1758,8 @@ const SITE_DATA = {
     }
   ],
   "stats": {
-    "total_items": 115,
+    "total_items": 114,
     "fed_official": 45,
-    "wallstreetcn": 70
+    "wallstreetcn": 69
   }
 };
