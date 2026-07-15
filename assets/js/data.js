@@ -1,8 +1,23 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-15T20:56:39Z",
+  "updated_at": "2026-07-15T22:56:02Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "wscn-3777059?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_opinion",
+      "title": "<em>美联储</em>理事库克：通胀风险已压倒就业风险，若通胀不降温将采取行动",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3777059?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-15T22:31:32+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
     {
       "id": "wscn-3777050?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "source": "wallstreetcn",
@@ -199,18 +214,18 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3776848?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "id": "wscn-3776848?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
       "category": "media_rate",
-      "title": "接近50%！市场预计<em>美联储</em>本月加息概率走高",
+      "title": "接近50%！市场预计<em>美联储</em>本月<em>加息</em>概率走高",
       "summary": "",
-      "url": "https://wallstreetcn.com/articles/3776848?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "url": "https://wallstreetcn.com/articles/3776848?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
       "published_at": "2026-07-14T00:00:07+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
-        "美联储"
+        "美联储 加息"
       ]
     },
     {
@@ -1788,8 +1803,8 @@ const SITE_DATA = {
     }
   ],
   "stats": {
-    "total_items": 116,
+    "total_items": 117,
     "fed_official": 45,
-    "wallstreetcn": 71
+    "wallstreetcn": 72
   }
 };
