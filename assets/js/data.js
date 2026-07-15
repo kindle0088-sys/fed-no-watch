@@ -1,8 +1,23 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-15T17:13:42Z",
+  "updated_at": "2026-07-15T19:04:58Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "wscn-3777050?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_opinion",
+      "title": "<em>美联储</em>褐皮书：美国大多数地区经济轻微至温和的增长，油价推升消费者支出，可选消费品支出下降",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3777050?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-15T18:01:00+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
     {
       "id": "fed-speeches-cook20260715a.htm",
       "source": "federal_reserve",
@@ -16,6 +31,21 @@ const SITE_DATA = {
       "speaker": "Cook",
       "keywords": [
         "federal reserve"
+      ]
+    },
+    {
+      "id": "wscn-3777042?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_opinion",
+      "title": "沃什：AI推高价格但未必推升通胀，任何通胀指标都不精确，特朗普没试图干预<em>美联储</em>",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3777042?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-15T14:59:29+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
       ]
     },
     {
@@ -184,18 +214,18 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3776831?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "id": "wscn-3776831?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
       "category": "media_rate",
-      "title": "美股美债黄金跌！<em>美联储</em>理事沃勒：若核心通胀持续高企，<em>美联储</em>或需加息",
+      "title": "美股美债黄金跌！<em>美联储</em>理事沃勒：若核心通胀持续高企，<em>美联储</em>或需<em>加息</em>",
       "summary": "",
-      "url": "https://wallstreetcn.com/articles/3776831?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "url": "https://wallstreetcn.com/articles/3776831?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
       "published_at": "2026-07-13T17:38:08+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
-        "美联储"
+        "美联储 加息"
       ]
     },
     {
@@ -226,21 +256,6 @@ const SITE_DATA = {
       "speaker": "Bowman",
       "keywords": [
         "federal reserve"
-      ]
-    },
-    {
-      "id": "wscn-3776775?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_opinion",
-      "title": "高盛：伊朗战争不足以打乱通胀锚，预计<em>美联储</em>全年按兵不动",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3776775?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-07-13T06:16:06+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
       ]
     },
     {
@@ -1189,18 +1204,18 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3772936?keyword=%E7%89%B9%E6%9C%97%E6%99%AE+%E7%BE%8E%E8%81%94%E5%82%A8",
+      "id": "wscn-3772936?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E9%99%8D%E6%81%AF",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
       "category": "media_rate",
-      "title": "“新<em>美联储</em>通讯社”：<em>特朗</em><em>普</em>选沃什本为降息，但市场已开始押注加息",
+      "title": "“新<em>美联储</em>通讯社”：特朗普选沃什本为<em>降息</em>，但市场已开始押注加息",
       "summary": "",
-      "url": "https://wallstreetcn.com/articles/3772936?keyword=%E7%89%B9%E6%9C%97%E6%99%AE+%E7%BE%8E%E8%81%94%E5%82%A8",
+      "url": "https://wallstreetcn.com/articles/3772936?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E9%99%8D%E6%81%AF",
       "published_at": "2026-05-22T11:46:08+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
-        "特朗普 美联储"
+        "美联储 降息"
       ]
     },
     {
@@ -1773,8 +1788,8 @@ const SITE_DATA = {
     }
   ],
   "stats": {
-    "total_items": 115,
+    "total_items": 116,
     "fed_official": 45,
-    "wallstreetcn": 70
+    "wallstreetcn": 71
   }
 };
