@@ -1,8 +1,23 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-15T15:24:11Z",
+  "updated_at": "2026-07-15T17:13:42Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "fed-speeches-cook20260715a.htm",
+      "source": "federal_reserve",
+      "source_label": "Fed Speech",
+      "category": "speech",
+      "title": "Cook, Economic Outlook",
+      "summary": "Speech At The Exchequer Club of Washington D.C., Washington, D.C.",
+      "url": "https://www.federalreserve.gov/newsevents/speech/cook20260715a.htm",
+      "published_at": "2026-07-15T17:00:00+00:00",
+      "language": "en",
+      "speaker": "Cook",
+      "keywords": [
+        "federal reserve"
+      ]
+    },
     {
       "id": "wscn-3777027?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "source": "wallstreetcn",
@@ -1214,21 +1229,6 @@ const SITE_DATA = {
       "published_at": "2026-05-20T18:00:00+00:00",
       "language": "en",
       "speaker": null,
-      "keywords": [
-        "federal reserve"
-      ]
-    },
-    {
-      "id": "fed-speeches-barr20260520a.htm",
-      "source": "federal_reserve",
-      "source_label": "Fed Speech",
-      "category": "speech",
-      "title": "Barr, Measuring Financial Health",
-      "summary": "Speech At EMERGE Financial Health 2026 Scaling Progress, Shaping the Future, Atlanta, Georgia",
-      "url": "https://www.federalreserve.gov/newsevents/speech/barr20260520a.htm",
-      "published_at": "2026-05-20T13:15:00+00:00",
-      "language": "en",
-      "speaker": "Barr",
       "keywords": [
         "federal reserve"
       ]
