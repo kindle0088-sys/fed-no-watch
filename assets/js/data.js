@@ -1,5 +1,5 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-15T19:04:58Z",
+  "updated_at": "2026-07-15T20:56:39Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
@@ -8,10 +8,10 @@ const SITE_DATA = {
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
       "category": "media_opinion",
-      "title": "<em>美联储</em>褐皮书：美国大多数地区经济轻微至温和的增长，油价推升消费者支出，可选消费品支出下降",
+      "title": "<em>美联储</em>褐皮书：美国经济微幅至温和增长，通胀前景存分歧，劳动力市场稳健",
       "summary": "",
       "url": "https://wallstreetcn.com/articles/3777050?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-07-15T18:01:00+00:00",
+      "published_at": "2026-07-15T19:18:53+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
