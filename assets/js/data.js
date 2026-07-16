@@ -1,8 +1,23 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-15T22:56:02Z",
+  "updated_at": "2026-07-16T02:11:34Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "wscn-3777062?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_opinion",
+      "title": "<em>美联储</em>《褐皮书》难于启齿的“秘密”：美国的隐形滞胀正在加剧",
+      "summary": "",
+      "url": "https://wallstreetcn.com/premium/articles/3777062?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-16T01:23:43+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
     {
       "id": "wscn-3777059?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "source": "wallstreetcn",
@@ -192,21 +207,6 @@ const SITE_DATA = {
       "summary": "",
       "url": "https://wallstreetcn.com/articles/3776880?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "published_at": "2026-07-14T04:34:14+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
-      ]
-    },
-    {
-      "id": "wscn-3776854?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_opinion",
-      "title": "<em>美联储</em>五大工作组的“大脑”",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3776854?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-07-14T01:08:43+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
