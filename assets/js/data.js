@@ -1,8 +1,23 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-16T20:53:09Z",
+  "updated_at": "2026-07-16T22:54:07Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "wscn-3777150?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_opinion",
+      "title": "美民主党参议员沃伦要求调查<em>美联储</em>理事鲍曼，称其委托SVB倒闭审查或涉嫌滥用政府资源",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3777150?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-16T22:13:08+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
     {
       "id": "fed-press_all-bcreg20260716a.htm",
       "source": "federal_reserve",
@@ -229,18 +244,18 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3776880?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "id": "wscn-3776880?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
       "category": "media_rate",
-      "title": "油价飙升市场巨震 <em>美联储</em>加息箭在弦上？",
+      "title": "油价飙升市场巨震 <em>美联储</em><em>加息</em>箭在弦上？",
       "summary": "",
-      "url": "https://wallstreetcn.com/articles/3776880?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "url": "https://wallstreetcn.com/articles/3776880?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
       "published_at": "2026-07-14T04:34:14+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
-        "美联储"
+        "美联储 加息"
       ]
     },
     {
@@ -1803,8 +1818,8 @@ const SITE_DATA = {
     }
   ],
   "stats": {
-    "total_items": 117,
+    "total_items": 118,
     "fed_official": 45,
-    "wallstreetcn": 72
+    "wallstreetcn": 73
   }
 };
