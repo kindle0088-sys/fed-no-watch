@@ -1,8 +1,23 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-16T22:54:07Z",
+  "updated_at": "2026-07-17T02:15:10Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "fed-speeches-jefferson20260716a.htm",
+      "source": "federal_reserve",
+      "source_label": "Fed Speech",
+      "category": "speech",
+      "title": "Jefferson, Navigating Economic Shocks: A Monetary Policymaker’s Perspective",
+      "summary": "Speech At the Stanford Institute for Economic Policy Research, Stanford University, Stanford, California",
+      "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20260716a.htm",
+      "published_at": "2026-07-16T23:00:00+00:00",
+      "language": "en",
+      "speaker": "Jefferson",
+      "keywords": [
+        "federal reserve"
+      ]
+    },
     {
       "id": "wscn-3777150?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "source": "wallstreetcn",
@@ -1216,21 +1231,6 @@ const SITE_DATA = {
       "speaker": null,
       "keywords": [
         "美联储 降息"
-      ]
-    },
-    {
-      "id": "fed-speeches-waller20260522a.htm",
-      "source": "federal_reserve",
-      "source_label": "Fed Speech",
-      "category": "speech",
-      "title": "Waller, Policy Risks Have Changed",
-      "summary": "Speech At The Centre for Central Banking Guest Lecture, Frankfurt School of Finance and Management, Frankfurt, Germany",
-      "url": "https://www.federalreserve.gov/newsevents/speech/waller20260522a.htm",
-      "published_at": "2026-05-22T14:00:00+00:00",
-      "language": "en",
-      "speaker": "Waller",
-      "keywords": [
-        "federal reserve"
       ]
     },
     {
