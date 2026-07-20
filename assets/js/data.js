@@ -1,8 +1,23 @@
 const SITE_DATA = {
-  "updated_at": "2026-07-20T02:36:22Z",
+  "updated_at": "2026-07-20T06:42:23Z",
   "site_title": "Fed No Watch",
   "site_subtitle": "美联储新闻时间线 —— 每天跟上联储动态",
   "items": [
+    {
+      "id": "wscn-3777391?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "source": "wallstreetcn",
+      "source_label": "华尔街见闻",
+      "category": "media_rate",
+      "title": "高盛：6月通胀已消除<em>美联储</em>7月加息可能性，沃什需要详解应对机制，避免金融波动",
+      "summary": "",
+      "url": "https://wallstreetcn.com/articles/3777391?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
+      "published_at": "2026-07-20T02:41:25+00:00",
+      "language": "zh",
+      "speaker": null,
+      "keywords": [
+        "美联储"
+      ]
+    },
     {
       "id": "wscn-3777164?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
       "source": "wallstreetcn",
@@ -244,21 +259,6 @@ const SITE_DATA = {
       ]
     },
     {
-      "id": "wscn-3776925?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_opinion",
-      "title": "沃什：<em>美联储</em>对持续高通胀“零容忍”",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3776925?keyword=%E7%BE%8E%E8%81%94%E5%82%A8",
-      "published_at": "2026-07-14T12:31:13+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储"
-      ]
-    },
-    {
       "id": "wscn-3776610?layout=wscn-layout?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E9%99%8D%E6%81%AF",
       "source": "wallstreetcn",
       "source_label": "华尔街见闻",
@@ -492,21 +492,6 @@ const SITE_DATA = {
       "summary": "",
       "url": "https://wallstreetcn.com/articles/3776237?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
       "published_at": "2026-07-06T00:50:26+00:00",
-      "language": "zh",
-      "speaker": null,
-      "keywords": [
-        "美联储 加息"
-      ]
-    },
-    {
-      "id": "wscn-3776243?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
-      "source": "wallstreetcn",
-      "source_label": "华尔街见闻",
-      "category": "media_rate",
-      "title": "Citadel策略主管：市场低估了<em>美联储</em>7月<em>加息</em>的可能性",
-      "summary": "",
-      "url": "https://wallstreetcn.com/articles/3776243?keyword=%E7%BE%8E%E8%81%94%E5%82%A8+%E5%8A%A0%E6%81%AF",
-      "published_at": "2026-07-06T00:39:31+00:00",
       "language": "zh",
       "speaker": null,
       "keywords": [
@@ -1818,8 +1803,8 @@ const SITE_DATA = {
     }
   ],
   "stats": {
-    "total_items": 118,
+    "total_items": 117,
     "fed_official": 45,
-    "wallstreetcn": 73
+    "wallstreetcn": 72
   }
 };
